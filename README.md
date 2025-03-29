@@ -43,7 +43,7 @@ I built a **Lambda function** that interacts with AWS **EC2 snapshots** to ident
 - Chose **Python 3.12** as the runtime and created the function.  
 
 📌 *Refer to the screenshot below for creating a Lambda function:*  
-![Lambda Function Creation](images/lambda-function.png)  
+![Lambda Function Creation](image/lambda-function.png)  
 
 ### 2️⃣ **Writing the Lambda Function Code**  
 I created a separate folder named **`lambda_script`** and placed my **Python script** inside it.  
@@ -61,7 +61,7 @@ To allow my Lambda function to interact with **EC2 snapshots**, I assigned the n
 - Went to *Configuration → Permissions* and clicked on the **service role** linked to Lambda.  
 
 📌 *Refer to the screenshot below for IAM role settings:*  
-![IAM Role Settings](images/iam-role.png)  
+![IAM Role Settings](image/iam-role.png)  
 
 ### **2️⃣ Creating an Inline IAM Policy**  
 - Opened the **IAM Console** → Clicked **Add Permissions** → **Create Inline Policy**.  
@@ -82,12 +82,12 @@ I tested the function using two scenarios to ensure proper snapshot cleanup.
 ✔️ **Created an EC2 Instance** (`test-ebs`).  
 
 📌 *EC2 instance creation screenshot:*  
-![EC2 Instance Creation](images/ec2-instance.png)  
+![EC2 Instance Creation](image/ec2-instance.png)  
 
 ✔️ **Took a snapshot** of the instance.  
 
 📌 *EBS Snapshot Creation screenshot:*  
-![EBS Snapshot](images/ebs-snapshot.png)  
+![EBS Snapshot](image/ebs-snapshot.png)  
 
 ✔️ **Terminated the EC2 instance**, leaving an orphaned snapshot.  
 ✔️ **Ran the Lambda function** → It detected and **deleted the unused snapshot**.  
@@ -99,7 +99,7 @@ I tested the function using two scenarios to ensure proper snapshot cleanup.
 ✔️ **Ran the Lambda function** → It identified and **deleted the unassociated snapshot**.  
 
 📌 *Refer to the screenshot below for testing Lambda execution:*  
-![Lambda Execution](images/lambda-execution.png)  
+![Lambda Execution](image/lambda-execution.png)  
 
 ---
 

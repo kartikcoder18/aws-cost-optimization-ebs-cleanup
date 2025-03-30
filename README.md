@@ -1,4 +1,4 @@
-# 📌 Optimizing AWS Costs: Automating Unused EBS Snapshot Cleanup with Lambda  
+# 📌 AWS Smart Cleanup: Automate EBS Snapshot Deletion with Lambda 
 
 ## 📖 Table of Contents  
 - [💡 Introduction](#-introduction)  

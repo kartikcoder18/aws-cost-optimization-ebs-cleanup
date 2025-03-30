@@ -49,7 +49,7 @@ I built a **Lambda function** that interacts with AWS **EC2 snapshots** to ident
 I created a separate folder named **`lambda_script`** and placed my **Python script** inside it.  
 You can find the Lambda function implementation in:  
 
-📂 `lambda_script/script.py`  
+📂 `script.py`  
 
 ---
 
